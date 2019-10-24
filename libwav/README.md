@@ -1,4 +1,4 @@
-# SEGV SEGV in function wav_content_read in libwav.c
+# SEGV in function wav_content_read in libwav.c
 
 Tested in Ubuntu 14.04, 32bit
 
