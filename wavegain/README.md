@@ -1,4 +1,4 @@
-# Memory leaks and stack overflow detected 
+# Memory leaks detected 
 
 Tested in Ubuntu 16.04, 64bit
 
