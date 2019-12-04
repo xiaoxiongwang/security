@@ -1,10 +1,16 @@
-# Memory leaks detected
+# Memory leaks detected in function internalMalloc
 
-Tested in Ubuntu 1６.04, 64bit
+Tested in Ubuntu 1６.04, 64bit.
+
+I compile lupng with the below command:
+
+```
+cc example.c lupng.c miniz/miniz.c -Iminiz/ -o lupng_test
+```
 
 I use the following command with the [file](lupng_memory_leaks_1):
 
-```shell
+```
 ./lupng_test lupng_memory_leaks_1 test.png
 ```
 
@@ -16,7 +22,7 @@ PNG: read error
 
 I use **AddressSanitizer** to build Lupng and get memory leaking error with the below command:
 
-```shell
+```
 ./lupng_test lupng_memory_leaks_1 test.png
 ```
 
@@ -78,4 +84,3 @@ Indirect leak of 158353501 byte(s) in 1 object(s) allocated from:
 
 SUMMARY: AddressSanitizer: 158353533 byte(s) leaked in 2 allocation(s).
 ```
-
