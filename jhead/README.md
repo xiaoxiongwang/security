@@ -1,4 +1,4 @@
-#　Segmentation fault detected in function Get32s of exif.c when running jhead 3.04
+# Segmentation fault detected in function Get32s of exif.c when running jhead 3.04
 
 Tested in Ubuntu 16.04, 64bit. [Jhead](https://www.sentex.ca/~mwandel/jhead/) version is 3.04 and updated on Nov 22 2019.
 
