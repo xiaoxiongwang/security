@@ -112,7 +112,7 @@ Nonfatal Error : 'jhead_segv.jpg' Inappropriate format (2) for Exif GPS coordina
 Segmentation fault
 ```
 
-I review the source code and try to find why this error occurs. I find line 138 of gpsinfo.c calls function Get32s and its parameter is ValuePtr+4+a*ComponentSize. However, the parameter which doesn't been verified may not be a valid pointer. So we will get a segmentation fault when the pointer be dereferenced with a malicious JPEG file. This may allow a remote attacker to cause a denial-of-service attack or unspecified other impact.
+I review the source code and try to find why this error occurs. I find line 138 of gpsinfo.c calls function Get32s and its parameter is ValuePtr+4+a*ComponentSize. However, the parameter which doesn't been verified may not be a valid pointer. So we will get a segmentation fault from line 332 to line 337 of function Get32s in exif.c when the pointer be dereferenced with a malicious JPEG file. This may allow a remote attacker to cause a denial-of-service attack or unspecified other impact.
 
 # heap-buffer-overflow detected in function process_DQT of jpgqguess.c when running jhead 3.04
 
