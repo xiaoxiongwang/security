@@ -1,4 +1,4 @@
-# SEGV in function StreamSerializer::extractStreams() in streamSerializer.cpp
+# SEGV occurs in function StreamSerializer::extractStreams() in streamSerializer.cpp
 
 Tested in Ubuntu 16.04, 64bit
 
@@ -84,7 +84,7 @@ oggvideotools-0.9.1/src/main/streamSerializer.cpp:163 StreamSerializer::extractS
 ==7905==ABORTING
 ```
 
-# SEGV and heap-overflow
+# SEGV and heap-overflow detected in line 17 of streamExtractor.cpp
 
 Tested in Ubuntu 16.04, 64bit
 
@@ -345,7 +345,7 @@ Shadow byte legend (one shadow byte represents 8 application bytes):
 ==7920==ABORTING
 ```
 
-# SEGV and heap-use-after-free
+# SEGV and heap-use-after-free detected in line 17 of streamExtractor.cpp
 
 Tested in Ubuntu 16.04, 64bit
 
