@@ -1,4 +1,4 @@
-# SEGV in function wav_content_read in libwav.c
+# SEGV in function wav_content_read in libwav.c(CVE-2019-19698)
 
 Tested in Ubuntu 14.04, 32bit
 
